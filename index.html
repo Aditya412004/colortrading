@@ -46,13 +46,24 @@
             display: flex;
             justify-content: center;
             margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         .carousel img {
             width: 150px;
-            margin: 0 10px;
+            height: auto;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .carousel img {
+                width: 100%; /* Make images full width on mobile */
+                max-width: 300px; /* Limit the max width to avoid stretching */
+            }
+        }
+
         .testimonial-container {
             width: 80%;
             margin: 20px auto;
