@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Prediction (OK.Win)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .header img {
+            border-radius: 10px;
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .description {
+            color: #555;
+            font-size: 16px;
+            margin: 10px 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .carousel {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .carousel img {
+            width: 150px;
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .testimonial-container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+        .testimonial-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .testimonial {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            flex: 0 0 30%;
+        }
+        .testimonial p {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+        function autoScrollTestimonials() {
+            const wrapper = document.querySelector('.testimonial-wrapper');
+            const testimonials = document.querySelectorAll('.testimonial');
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            wrapper.style.transform = `translateX(-${currentIndex * 33.33}%)`;
+        }
+        setInterval(autoScrollTestimonials, 3000);
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="profile-placeholder.jpg" alt="Profile">
+    </div>
+    <h1>Colour Prediction (OK.Win)</h1>
+    <p class="description">
+        🎉 VIP CRICKET PREDICTION FREE OF COST 🎉 JOIN OUR TELEGRAM CHANNEL - GROUP AND WIN DAILY 5000 / 6000 SO NO LATE JOIN NOW 🔥🎉
+    </p>
+    <a href="#" class="btn">Join Free Telegram Channel</a>
+
+    <div class="carousel">
+        <img src="ss.jpg" alt="Screenshot 1">
+        <img src="ss.jpg" alt="Screenshot 2">
+        <img src="ss.jpg" alt="Screenshot 3">
+    </div>
+
+    <a href="#" class="btn">Join Telegram Now And Start Profit 🔥</a>
+
+    <div class="testimonial-container">
+        <div class="testimonial-wrapper">
+            <div class="testimonial">
+                <p>
+                    “If you’re into colour trading, this channel is a must-follow! Clear guidance, detailed explanations, and daily updates that have made a big difference in my trading journey.”
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    “Fantastic channel! I’ve gained so much confidence and have consistently improved my results thanks to their expert advice.”
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    “Joining this channel has been one of the best decisions I’ve made for my trading career. Their predictions are accurate and insightful!”
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    “The guidance provided here is top-notch. The community is great, and I’ve learned a lot from this channel!”
+                </p>
+            </div>
+            <div class="testimonial">
+                <p>
+                    “Highly recommended for anyone looking to improve their trading skills. The support and advice are amazing!”
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
